@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "f826797c-aa52-4df0-a64a-dff318390755",
+		"name": "Jeu Video",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Find jeu video",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:3000/jeuVideo",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "3000",
+					"path": [
+						"jeuVideo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "View jeu video",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:3000/jeuVideo/602268d4d896de5a9dcc2fc5",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "3000",
+					"path": [
+						"jeuVideo",
+						"602268d4d896de5a9dcc2fc5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create jeuVideo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nom\" : \"jeu video\",\n     \"description\": \"\",\n    \"type\" : [\"Combat\",\"Vball\"]\n  \"console\": \"\",\n  \"disponible\": \"\",\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:3000/jeuVideo",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "3000",
+					"path": [
+						"jeuVideo"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
